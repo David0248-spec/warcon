@@ -349,7 +349,7 @@ function buildBody(opts: StatusOptions, server: StatusServer, live: LiveView | n
 		const top = [...players].sort(byKills).slice(0, 3);
 		const counts: EmbedField[] = ranked.map(({ f, i }) => ({
 			name: clip(`${squareFor(f.colorHex, f.name, i)} ${f.name}`, 256),
-			value: `${players.filter((p) => p.faction === f.name).length} players`,
+			value: `${players.filter((p) => p.faction === f.name).length} graczy`,
 			inline: true
 		}));
 		const topLine = top.length
