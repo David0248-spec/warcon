@@ -360,7 +360,7 @@ export function postDiscord(
 	payload: DiscordPayload
 ): Promise<PostResult> {
 	return discordCall(env, hook, 'POST', '?wait=true', {
-		username: env.APP_NAME || 'Warcon',
+		username: 'ARMA-GEDON',
 		allowed_mentions: { parse: [] },
 		...payload
 	});
