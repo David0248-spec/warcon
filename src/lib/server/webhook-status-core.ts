@@ -380,7 +380,7 @@ function buildBody(opts: StatusOptions, server: StatusServer, live: LiveView | n
 			)
 		].join('\n');
 		const fields: EmbedField[] = rows.length
-			? [{ name: 'Scoreboard', value: fitLines(['```', ...table.split('\n'), '```']) }]
+			? [{ name: 'Tabela', value: fitLines(['```', ...table.split('\n'), '```']) }]
 			: [];
 		const shownNote = rows.length > shown.length ? `Top ${shown.length} na ${rows.length} · ` : '';
 		return fitEmbed({
