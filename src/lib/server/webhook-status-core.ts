@@ -259,7 +259,7 @@ function buildBody(opts: StatusOptions, server: StatusServer, live: LiveView | n
 			name: clip(opts.orgName, 200),
 			...(https ? { icon_url: `${opts.origin}/icon-192.png` } : {})
 		},
-		footer: { text: opts.appName }
+		footer: { text: 'ARMA-GEDON' }
 	};
 	// The join code (GET /v1/server-id, CL-501228+) as a code block: Discord gives those a copy
 	// button on hover (desktop) and copy on long-press (mobile), the nearest thing to click-to-copy.
