@@ -238,7 +238,7 @@ describe('styles', () => {
 		expect(lines[3]).toBe('First to 100 · 0:25:23 played');
 		expect(lines[4]).toContain('**6 / 100** online');
 		const table = e.fields?.[0];
-		expect(table?.name).toBe('Scoreboard');
+		expect(table?.name).toBe('Tabela');
 		expect(table?.value.split('\n').slice(0, 3)).toEqual([
 			'```',
 			' K   D   Player            Faction',
