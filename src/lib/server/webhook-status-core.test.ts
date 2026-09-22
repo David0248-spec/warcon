@@ -249,7 +249,7 @@ describe('styles', () => {
 		const many = Array.from({ length: 87 }, (_, i) => p(`P${i}`, 'Valkyra', 87 - i, i));
 		const big = buildStatusEmbed({ ...opts, style: 'scoreboard' }, server, live({ players: many }));
 		expect(big.fields?.[0].value.split('\n')).toHaveLength(TABLE_ROWS_EXPECTED);
-		expect(big.fields?.at(-1)?.value).toMatch(/^Top 20 of 87 · Updated/);
+		expect(big.fields?.at(-1)?.value).toMatch(/^Top 20 na 87 · Zaktualizowano/);
 		expect(big.fields?.[0].value.length).toBeLessThanOrEqual(LIMITS.field);
 	});
 	test('the style is part of the change key', () => {
