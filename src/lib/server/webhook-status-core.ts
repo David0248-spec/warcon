@@ -373,7 +373,7 @@ function buildBody(opts: StatusOptions, server: StatusServer, live: LiveView | n
 		const shown = rows.slice(0, TABLE_ROWS);
 		const cell = (v: string, w: number) => clip(v.replace(/`/g, "'"), w).padEnd(w);
 		const table = [
-			' K   D   Player            Faction',
+			' K   D   Gracz            Frakcja',
 			...shown.map(
 				(p) =>
 					`${String(p.kills).padStart(2)}  ${String(p.deaths).padStart(2)}   ${cell(p.name, 17)} ${clip(p.faction ?? '—', 10)}`
