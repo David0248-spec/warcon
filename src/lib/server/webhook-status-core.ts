@@ -373,7 +373,7 @@ function buildBody(opts: StatusOptions, server: StatusServer, live: LiveView | n
 		const shown = rows.slice(0, TABLE_ROWS);
 		const cell = (v: string, w: number) => clip(v.replace(/`/g, "'"), w).padEnd(w);
 		const table = [
-			'\u001b[1;33m K   D   Gracz             Frakcja\u001b[0m',
+			' K   D   Gracz             Frakcja',
 			
 			...shown.map(
 				(p) =>
